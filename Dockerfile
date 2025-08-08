@@ -16,7 +16,7 @@ COPY . .
 
 # Установка и сборка frontend
 WORKDIR /app/frontend
-RUN npm install && npm run build
+RUN npm run build
 
 # Копируем билд React в backend/static
 RUN cp -r build ../backend/static/
